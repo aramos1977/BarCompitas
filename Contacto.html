@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Bar Los Compitas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/contact.css" rel="stylesheet">
+        <!-- GOOGLE FONTs -->
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!-- ANIMATE CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    </head>
+    <body>
+        <section class="menus-area" style="background-image: url('./img/pexel16.jpg');"></section>
+        <h1><span>Contactenos Bar Los Compitas</span></h1>
+
+        <div class="form-container">
+            <h1>Formulario de Contacto</h1>
+            <br>
+            <form id="contact-form">
+            <div class="form-group">
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" id="nombre" name="nombre" required>
+              </div>
+              <div class="form-group">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+              </div>
+              <div class="form-group">
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" name="celular" required>
+              </div>
+              <div class="form-group">
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+            </form>
+            <div id="success-msg" class="success-message" style="display: none;">
+                El mensaje ha sido enviado de forma exitosa...
+                En Breve nos Comunicaremos con usted.
+                Gracias...
+            </div>
+          </div>
+
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="./js/enviar.js"></script>
+    </body>
+    </html>

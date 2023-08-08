@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Los Compitas - Pedidos de Bebidas</title>
+    <link rel="stylesheet" href="./css/reserva.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bar Los Compitas - Pedidos de Bebidas</h1>
+
+    <div class="list-container">
+      <label for="mesas">Seleccione la mesa:</label>
+      <select id="mesas">
+        <option value="" disabled selected>Selecciona una mesa</option>
+        <option value="Mesa-1">Mesa-1</option>
+        <option value="Mesa-2">Mesa-2</option>
+        <option value="Mesa-3">Mesa-3</option>
+        <option value="Mesa-4">Mesa-4</option>
+        <option value="Mesa-5">Mesa-5</option>
+        <option value="Mesa-6">Mesa-6</option>
+        <option value="Mesa-7">Mesa.7</option>
+        <option value="Mesa-8">Mesa-8</option>
+        <option value="Mesa-9">Mesa-9</option>
+        <!-- Aquí se generan las 20 mesas -->
+        <!-- ... opciones de mesas ... -->
+      </select>
+    </div>
+
+    <div class="list-container">
+      <label for="meseros">Seleccione el mesero:</label>
+      <select id="meseros">
+        <option value="" disabled selected>Selecciona un mesero</option>
+        <option value="Carlos">Carlos</option>
+        <option value="Miguel">Miguel</option>
+        <option value="Mery">Mery</option>
+        <option value="Jhon">Jhon</option>
+        <option value="Juan">Juan</option>
+        <option value="Dario">Dario</option>
+        <option value="Luz">Luz</option>
+        <option value="Fredy">Fredy</option>
+        <option value="Martha">Martha</option>
+        <option value="Carolina">Carolina</option>
+      </select>
+    </div>
+
+    <div class="list-container">
+      <label for="bebidas">Seleccione una bebida:</label>
+      <select id="bebidas">
+        <option value="" disabled selected>Selecciona una bebida</option>
+        <option value="Whisky">Whisky - Precio: $150</option>
+        <option value="Vodka">Vodka - Precio: $100</option>
+        <option value="Tequila">Tequila - Precio: $200</option>
+        <option value="Ron">Ron - Precio: $300</option>
+        <option value="Ginebra">Ginebra - Precio: $250</option>
+        <option value="Pisco">Pisco - Precio: $245</option>
+        <option value="Brandy">Brandy - Precio: $256</option>
+        <option value="Coñac">Coñac - Precio: $345</option>
+        <option value="Cerveza Corona">Cerveza Corona - Precio: $267</option>
+        <option value="Agua">Agua - Precio: $200</option>
+        <option value="Baileys">Baileys - Precio: $345</option>
+        <option value="Jägermeister">Jägermeister - Precio: $344</option>
+        <option value="Khlibniy">Khlibniy - Precio: $234</option>
+        <option value="Jack Daniels (Whiskey)">Jack Daniels (Whiskey) - Precio: $456</option>
+        <option value="Absolut (Vodka)">Absolut (Vodka) - Precio: $347</option>
+        <option value="Captain Morgan (Ron)">Captain Morgan (Ron) - Precio: $246</option>
+        <option value="Red Star Er Guo (Vodka)">Red Star Er Guo (Vodka) - Precio: $400</option>
+        <option value="Bagpiper United Spirits (Whisky)">Bagpiper United Spirits (Whisky) - Precio: $345</option>
+        <option value="McDowell‘s (Whisky)">McDowell‘s (Whisky) - Precio: $344</option>
+        <option value="Smirnoff (Vodka)">Smirnoff (Vodka) - Precio: $329</option>
+        <!-- Resto de las bebidas con sus precios -->
+      </select>
+    </div>
+
+    <button class="btn" onclick="guardarPedido()">Guardar</button>
+
+    <table id="pedidosTable">
+      <tr>
+        <th>Mesa</th>
+        <th>Mesero</th>
+        <th>Bebida</th>
+        <th>Precio</th>
+      </tr>
+      <!-- Aquí se mostrarán los pedidos -->
+    </table>
+
+    <div class="order-summary" id="orderSummary">
+      <h2>Resumen del Pedido</h2>
+      <ul id="orderList">
+        <!-- Aquí se mostrará el resumen del pedido -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="./js/reserva.js"></script>
+</body>
+</html>
